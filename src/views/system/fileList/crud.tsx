@@ -45,7 +45,7 @@ export const createCrudOptions = function ({ crudExpose, context }: CreateCrudOp
 				//固定右侧
 				fixed: 'right',
 				width: 200,
-				show: false,
+				show: true,
 				buttons: {
 					view: {
 						show: false,
@@ -83,7 +83,7 @@ export const createCrudOptions = function ({ crudExpose, context }: CreateCrudOp
 						show: false,
 					},
 					search: {
-						show: true,
+						show: false,
 						component: {
 							props: {
 								clearable: true,
@@ -132,6 +132,7 @@ export const createCrudOptions = function ({ crudExpose, context }: CreateCrudOp
 						disabled: true,
 					},
 					column: {
+						show: false,
 						minWidth: 300,
 					},
 					form: {
